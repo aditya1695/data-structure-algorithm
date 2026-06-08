@@ -1,7 +1,5 @@
 package sharma.aditya.arrays;
 
-import java.util.Arrays;
-
 public class PrefixSum {
     /*
     arr = [1,2,3,4,5]

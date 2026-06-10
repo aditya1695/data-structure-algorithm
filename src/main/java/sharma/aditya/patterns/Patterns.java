@@ -95,4 +95,41 @@ class Patterns {
             System.out.println();
         }
     }
+
+    protected void pattern11(int n){
+        int lastElement = 1;
+        for(int i = 1; i <= n; i++){
+            for (int j = 0; j < i; j++) {
+                System.out.print(lastElement);
+                lastElement = (lastElement == 1) ? 0: 1;
+            }
+            System.out.println();
+        }
+    }
+
+    protected void pattern12(int n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(j+1);
+            }
+            for (int j = 0; j < (n-i)*2; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j > 0; j--) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    protected void pattern13(int n) {
+        int start = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(start+ " ");
+                start++;
+            }
+            System.out.println();
+        }
+    }
 }
